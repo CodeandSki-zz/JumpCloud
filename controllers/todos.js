@@ -80,6 +80,28 @@ module.exports = function(todos) {
       } catch(e) {
         res.status(statusCode).send(e);
       }
+    },
+
+    // Delete a todo, given a supplied ID
+    delete: function(req, res) {
+      var statusCode = 200;
+      try {
+        if (!req.params.id) {
+          statusCode = 500;
+          throw 'An ID was not supplied';
+        }
+        var id = parseInt(req.params.id, 10);
+        var todo = _.findWhere(todos, { id: id });
+        if (!todo) {
+          statusCode = 404;
+          throw 'A todo with the given ID was not found';
+        } else {
+          todos.splice(todos.indexOf(todo), 1);
+          res.status(statusCode).send(true);
+        }
+      } catch(e) {
+        res.status(statusCode).send(e);
+      }
     }
 
   };
