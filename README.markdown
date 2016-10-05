@@ -10,6 +10,7 @@ Using the code already in this repository, please create the front end for a sim
 
 ## Running the server
 To run the server, make sure you have `node` and `npm` installed on your machine. Then do the following:
+
 1. Pull down all the node dependencies:
   ```
   npm install
