@@ -19,6 +19,7 @@ var controllers = {
 app.get('/api/todos', controllers.todos.getAll);
 app.get('/api/todos/:id', controllers.todos.getOne);
 app.post('/api/todos', controllers.todos.create);
+app.put('/api/todos/:id', controllers.todos.update);
 
 app.listen(PORT, function() {
   console.log('Server started on port ' + PORT);
