@@ -3,19 +3,19 @@ var
   app = express(),
   PORT = 3004;
 
+app.use(express.static(__dirname + '/public'));
+
 var data = {
   todos: require('./data/todos')
 };
 
-var routes = {
-  todos: require('./routes/todos')(data.todos)
+var controllers = {
+  todos: require('./controllers/todos')(data.todos)
 };
 
-app.use(express.static(__dirname + '/public'));
-
 // ToDo API routes
-app.get('/api/todos', routes.todos.getAll);
-app.get('/api/todos/:id', routes.todos.getOne);
+app.get('/api/todos', controllers.todos.getAll);
+app.get('/api/todos/:id', controllers.todos.getOne);
 
 app.listen(PORT, function() {
   console.log('Server started on port ' + PORT);
