@@ -1,0 +1,13 @@
+{
+  "name": "jumpcloud-ui-assignment",
+  "version": "1.0.0",
+  "description": "A project that can be used to asses front-end developers",
+  "repository": {},
+  "private": true,
+  "author": "JumpCloud",
+  "bugs": {},
+  "scripts": {},
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
