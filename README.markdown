@@ -39,7 +39,7 @@ following:
 
 4. Point browser to:
   ```
-  http://localhost:3005/
+  http://localhost:8005/
   ```
 
 **JumpCloud Confidential, please do not distribute this assignment in any form.**

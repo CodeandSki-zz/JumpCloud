@@ -70,7 +70,7 @@ const config = {
   devServer: {
     contentBase: path.join(__dirname, "public"),
     hot: true,
-    port: 3005,
+    port: 8005,
   }
 };
 

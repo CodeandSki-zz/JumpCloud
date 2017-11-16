@@ -19,7 +19,7 @@ const renderTodos = (todos) => {
 
 const getTodos = () => {
   return new Promise((resolve) => {
-    fetch('http://localhost:3004/api/todos')
+    fetch('http://localhost:8004/api/todos')
       .then(r => r.json())
       .then(data => resolve(data));
   });
