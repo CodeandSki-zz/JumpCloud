@@ -9,7 +9,7 @@ todos. A simple API has been created at `http://localhost:3004/api/todos` that
 will function as the back end. The solution should demonstrate your ability to:
 
 - Organize front end code
-- Inteact with an existing API
+- Interact with an existing API
 - Use a front end framework (e.g. _Angular_, _Backbone_, _React_, _Vue_ )
 - Style your work
 - Create scalable and secure code
