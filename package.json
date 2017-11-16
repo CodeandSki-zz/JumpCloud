@@ -11,10 +11,29 @@
   "bugs": {
     "url": "https://github.com/TheJumpCloud/jumpcloud-ui-assignment/issues"
   },
-  "scripts": {},
+  "scripts": {
+    "start:client": "webpack-dev-server --progress --inline",
+    "start:server": "node server/server.js"
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "underscore": "^1.8.3"
-  }
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "postcss-loader": "^2.0.8",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
