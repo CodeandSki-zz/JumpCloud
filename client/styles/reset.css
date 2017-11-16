@@ -1,0 +1,212 @@
+/**
+ * This file contains reset styles as obtained from Eric Meyer's Reset CSS. It
+ * also uses the :global() switch so that the selectors here are exposed in the
+ * global scope rather than on module basis.
+ * @see
+ * http://cssreset.com
+ * https://github.com/css-modules/css-modules#exceptions
+ */
+
+:global(html),
+:global(body),
+:global(div),
+:global(span),
+:global(applet),
+:global(object),
+:global(iframe),
+:global(h1),
+:global(h2),
+:global(h3),
+:global(h4),
+:global(h5),
+:global(h6),
+:global(p),
+:global(blockquote),
+:global(pre),
+:global(a),
+:global(abbr),
+:global(acronym),
+:global(address),
+:global(big),
+:global(cite),
+:global(code),
+:global(del),
+:global(dfn),
+:global(em),
+:global(img),
+:global(ins),
+:global(kbd),
+:global(q),
+:global(s),
+:global(samp),
+:global(small),
+:global(strike),
+:global(strong),
+:global(sub),
+:global(sup),
+:global(tt),
+:global(var),
+:global(b),
+:global(u),
+:global(i),
+:global(center),
+:global(dl),
+:global(dt),
+:global(dd),
+:global(ol),
+:global(ul),
+:global(li),
+:global(fieldset),
+:global(form),
+:global(label),
+:global(legend),
+:global(table),
+:global(caption),
+:global(tbody),
+:global(tfoot),
+:global(thead),
+:global(tr),
+:global(th),
+:global(td),
+:global(article),
+:global(aside),
+:global(canvas),
+:global(details),
+:global(embed),
+:global(figure),
+:global(figcaption),
+:global(footer),
+:global(header),
+:global(hgroup),
+:global(menu),
+:global(nav),
+:global(output),
+:global(ruby),
+:global(section),
+:global(summary),
+:global(time),
+:global(mark),
+:global(audio),
+:global(video),
+:global(button) {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+:global(article),
+:global(aside),
+:global(details),
+:global(figcaption),
+:global(figure),
+:global(footer),
+:global(header),
+:global(hgroup),
+:global(menu),
+:global(nav),
+:global(section) {
+  display: block;
+}
+
+:global(*) {
+  box-sizing: border-box;
+}
+
+:global(body) {
+  line-height: 1;
+}
+
+:global(a) {
+  cursor: pointer;
+  outline: none;
+}
+
+:global(em) {
+  font-style: italic;
+}
+
+/* Button reset styles from https://github.com/necolas/normalize.css */
+
+:global(button) {
+  appearance: button;
+  background-color: inherit;
+  border: 0 none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+}
+
+:global(button::-moz-focus-inner) {
+  border: 0;
+  padding: 0;
+}
+
+:global(input[type="button"]),
+:global(input[type="reset"]),
+:global(input[type="submit"]) {
+  appearance: button;
+  cursor: pointer;
+}
+
+:global(input[type=text]::-ms-clear) {
+  display: none;
+}
+
+:global(ol),
+:global(ul) {
+  list-style: none;
+}
+
+:global(blockquote),
+:global(q) {
+  quotes: none;
+}
+
+:global(blockquote:before),
+:global(blockquote:after),
+:global(q:before),
+:global(q:after) {
+  content: '';
+  content: none;
+}
+
+:global(table) {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:global(textarea) {
+  overflow: auto;
+}
+
+:global(b),
+:global(strong) {
+  font-weight: bold;
+}
+
+/*
+ * Remove orange outline hightlight on focus on Android.
+ * See: http://stackoverflow.com/questions/5210481/disable-orange-outline-highlight-on-focus
+ */
+:global(*) {
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+:global(.clearfix) {
+  *zoom: 1;
+}
+
+:global(.clearfix::after) {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
