@@ -20,7 +20,7 @@ const config = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract({
+        loader: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
             {
@@ -36,7 +36,7 @@ const config = {
               loader: 'postcss-loader',
             },
           ],
-        }),
+        })),
       },
       {
         test: /\.html/,
