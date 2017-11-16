@@ -3,15 +3,23 @@
 ## Instructions
 
 Using the code already in this repository as a starting point, please create
-the front end for a simple "ToDo" application. The app should support the 
-ability to view and edit/complete existing todos, add new todos, and delete
-todos. A simple API has been created at `http://localhost:3004/api/todos` that
+the front end for a simple "ToDo" application. The applicaction should allow
+the user to:
+
+- Create a new todo item
+- Display a list of todo items
+- Update an existing todo item
+  - Toggle the done status
+  - Change the description
+- Delete a todo item
+
+A simple API has been created at `http://localhost:8004/api/todos` that
 will function as the back end. The solution should demonstrate your ability to:
 
 - Organize front end code
 - Interact with an existing API
-- Use a front end framework (e.g. _Angular_, _Backbone_, _React_, _Vue_ )
-- Style your work
+- Use a front end JavaScript framework (e.g. _Angular_, _Backbone_, _React_, _Vue_ )
+- Style your work using either custom CSS or a CSS framework.
 - Create scalable and secure code
 
 Tests are _NOT_ required!
