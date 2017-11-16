@@ -19,7 +19,7 @@ will function as the back end. The solution should demonstrate your ability to:
 - Organize front end code
 - Interact with an existing API
 - Use a front end JavaScript framework (e.g. _Angular_, _Backbone_, _React_, _Vue_ )
-- Style your work using either custom CSS or a CSS framework.
+- Style your work using either custom CSS or a CSS framework
 - Create scalable and secure code
 
 Tests are _NOT_ required!
