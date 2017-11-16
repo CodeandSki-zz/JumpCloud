@@ -1,11 +1,25 @@
-var
-  express = require('express'),
-  bodyParser = require('body-parser'),
-  app = express(),
-  PORT = 3004;
+var express = require('express');
+var bodyParser = require('body-parser');
+var app = express();
+var PORT = 8004;
 
-app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
+
+app.use(function(req, res, next) {
+  var whitelist = [
+    'http://localhost:8005',
+  ];
+
+  var origin = req.headers.origin;
+
+  if (whitelist.indexOf(origin) > -1) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  }
+
+  res.header('Access-Control-Allow-Methods', 'GET, OPTIONS, PUT, POST, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  return next();
+});
 
 var data = {
   todos: require('./data/todos')

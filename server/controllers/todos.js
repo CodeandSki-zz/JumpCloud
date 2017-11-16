@@ -41,8 +41,8 @@ module.exports = function(todos) {
           statusCode = 400;
           throw 'A valid description must be given';
         }
-        // get a new ID (would be handled by proepr DB automatically)
-        var id = Math.max.apply(null, _.pluck(todos, 'id')) + 1;
+        // get a new ID (would be handled by proper DB automatically)
+        var id = todos.length ? Math.max.apply(null, _.pluck(todos, 'id')) + 1 : 1;
         var todo = {
           id: id,
           done: req.body.done || false,
